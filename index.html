@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreetLine - Coleção</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="grid-background"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Buscar produto...">
+            <img src="imagens/icon-pesquisa.png" alt="Pesquisar" onclick="searchProduct()">
+        </div>
+
+        <div class="top-right">
+            <nav>
+                <a href="#sobre">Sobre</a>
+                <a href="#catalogo">Catálogo</a>
+            </nav>
+            <div class="logo-circular">
+                <img src="imagens/logo-circular.png" alt="Logo Circular">
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MAIN ===== -->
+    <main>
+        <div class="logo">
+            <img src="imagens/logo-streetline.png" alt="Logo StreetLine" class="logo-streetline">
+        </div>
+
+        <div class="colecao">
+            <img src="imagens/colecao.png" alt="Logo da Coleção" class="logo-colecao">
+            <p>Estilo que conquista. Atitude que marca.</p>
+        </div>
+    </main>
+
+    <hr class="divisor">
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre" class="sobre fade-in">
+        <h2>Sobre a StreetLine</h2>
+        <p>
+            A <strong>StreetLine</strong> nasceu da paixão pela moda urbana e pela cultura de rua.
+            Nossa missão é trazer estilo, autenticidade e atitude para quem vive a cidade, busca se expressar e
+            se destacar com peças exclusivas e de qualidade.
+        </p>
+        <p>
+            Criada por apaixonados pelo streetwear, a StreetLine representa muito mais do que roupas. Representa um
+            movimento, uma forma de se posicionar no mundo e mostrar sua essência.
+            Aqui, cada peça conta uma história, e cada detalhe reflete nosso compromisso com quem vive o lifestyle urbano.
+        </p>
+    </section>
+
+    <hr class="divisor">
+
+    <!-- ===== CATÁLOGO ===== -->
+    <section id="catalogo" class="produtos fade-in">
+        <h2 class="titulo-catalogo">Catálogo de Produtos</h2>
+        <!-- Produtos serão carregados aqui -->
+    </section>
+
+    <p id="mensagemBusca" style="text-align:center; margin-top: 20px; display:none; color:#FFD700;">
+        Nenhum produto encontrado.
+    </p>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="whatsapp">🟢 27 98804-0531</div>
+        <div class="insta">@str.streetline</div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
